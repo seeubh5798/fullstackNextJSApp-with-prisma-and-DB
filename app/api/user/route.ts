@@ -4,7 +4,7 @@ import prisma from "@/db";
 
 // const prisma = new PrismaClient();
 
-export function GET(req : NextRequest){
+export async function GET (req : NextRequest){
     // console.log(req)
     return Response.json({ name : "shubham" , password : "test"});
 }
