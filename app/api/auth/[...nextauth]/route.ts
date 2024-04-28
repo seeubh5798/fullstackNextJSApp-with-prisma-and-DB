@@ -9,6 +9,8 @@ const handler = NextAuth({
                 pasword  :{ type :'password' , label : 'password' , placeholder : 'Enter your password'}
             },
             async authorize(credentials :any){
+
+                // db logic here to vberify user
                 return {
                     userId : "user1",
                 };
